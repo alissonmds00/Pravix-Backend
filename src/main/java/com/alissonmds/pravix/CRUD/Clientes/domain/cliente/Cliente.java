@@ -9,7 +9,7 @@ import lombok.*;
 
 @Getter
 @Setter
-@NoArgsConstructor
+//@NoArgsConstructor
 @AllArgsConstructor
 @Table(name = "clientes")
 @Entity(name = "Cliente")
@@ -19,6 +19,7 @@ public class Cliente {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String nome;
+    private String cpf;
     private String telefone;
     @Embedded
     private Endereco endereco;
@@ -30,6 +31,10 @@ public class Cliente {
     public String getNome() {
         return nome;
     }
+
+    public String getCpf() {return cpf;}
+
+    public void setCpf(String cpf) {this.cpf = cpf;}
 
     public String getTelefone() {
         return telefone;
@@ -58,12 +63,11 @@ public class Cliente {
     public Cliente(DadosCadastramentoCliente dados) {
         this.nome = dados.nome();
         this.telefone = dados.telefone();
+        this.cpf = dados.cpf();
         this.endereco = new Endereco(dados.endereco());
     }
 
-    public Cliente() {
-
-    }
+    public Cliente() {}
 
     public void alterarInformacoes(DadosEdicaoDadosCliente dados) {
         if (dados.telefone() != null) {
