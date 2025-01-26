@@ -5,6 +5,8 @@ API CRUD para gerenciamento de Clientes, feita em Java
 - Maven
 - Uma database no Postgresql nomeada "pravix"
 
+OBS: Ao optar pela opção com o Docker, não há necessidade de baixar o Maven e o Java JDK individualmente.
+
 OPÇÃO COM DOCKER (RECOMENDADO):
 - Docker (apenas)
 
