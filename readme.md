@@ -31,4 +31,4 @@ http://localhost:555/*
 http://localhost:555/swagger-ui/index.html
 
 <h2> Diagrama de classes </h2>
-<img src="Diagrama%20de%20classes.png">
+<img src="Diagrama%20de%20classes.png" alt="diagrama de classes">
