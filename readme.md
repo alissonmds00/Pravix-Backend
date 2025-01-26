@@ -29,3 +29,6 @@ Ao acessar a pasta raiz do projeto, execute o comando:
 http://localhost:555/*
 - Documentação e detalhamento dos endpoints:
 http://localhost:555/swagger-ui/index.html
+
+<h2> Diagrama de classes </h2>
+<img src="Diagrama%20de%20classes.png">
